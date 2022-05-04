@@ -1,0 +1,10 @@
+192.168.0.6
+192.168.0.7
+8505
+tcp
+0.5
+69
+
+iptables -A INPUT -i wlan0 -p tcp --dport 8505 -j DROP
+iptables -A OUTPUT -p tcp --dport 8505 -j DROP
+/home/banana/S3/8505/FP
